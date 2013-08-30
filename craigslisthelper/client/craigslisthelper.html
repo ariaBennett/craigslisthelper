@@ -1,0 +1,16 @@
+<head>
+  <title>craigslisthelper</title>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+
+<body>
+  <div class='row-fluid' id='main_content'>
+    <div class='span12'>
+      {{> craigslist}}
+    </div>
+  </div>
+</body>
+
+<template name ='craigslist'>
+<iframe src="http://sfbay.craigslist.org/search/zip?query=berkeley&zoomToPosting=&srchType=A&minAsk=&maxAsk=" width=100% height={{height}} id='craigslist_page' ticker={{tick}} ></iframe>
+</template>
